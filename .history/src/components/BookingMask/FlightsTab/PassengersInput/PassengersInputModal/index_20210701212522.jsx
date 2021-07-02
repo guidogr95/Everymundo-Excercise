@@ -1,0 +1,28 @@
+// utils
+import { Modal, Button } from 'antd'
+
+export default function PassengersInputModal ({ title, isVisible, setIsVisible }) {
+  return (
+    <Modal
+      title={title || ''}
+      centered
+      visible={isVisible}
+      closable={true}
+      onOk={() => setIsVisible(false)}
+      footer={[
+        <Button key="ok" onClick={() => setIsVisible(false)}>
+          Continue
+        </Button>
+      ]}
+    >
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+      <p>sdklaskdal</p>
+    </Modal>
+  )
+}

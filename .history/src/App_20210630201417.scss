@@ -1,0 +1,10 @@
+@import 'styles/global';
+
+.flightmanager-container {
+  background: url('./assets/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  max-width: $desktop-maxwidth;
+  width: 100%;
+}

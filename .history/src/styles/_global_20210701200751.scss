@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'mixins';
+
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  --antd-wave-shadow-color: #c00;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.ant-select {
+  min-width: 270px;
+}
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-picker-focused,
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border-color: $color-red !important;
+}
+body::-moz-selection,
+body::selection {
+  color: $color-red !important;
+  background: $color-red !important;
+}

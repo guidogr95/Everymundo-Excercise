@@ -1,0 +1,19 @@
+@import 'styles/global';
+
+.App {
+  .container {
+    width: $desktop-maxwidth;
+    max-width: 100%;
+  }
+  .flightmanager-container {
+    background: url('./assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    margin: auto;
+    padding: 4rem;
+    @include breakpoint($bp-desktop-large) {
+      padding: 4rem 2rem;
+    }
+  }
+}

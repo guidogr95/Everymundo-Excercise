@@ -1,0 +1,16 @@
+.airportinput__dropdown {
+  .ant-select-item-empty {
+    text-align: center;
+  }
+  .ant-select-item-option-content {
+    display: flex;
+    flex-direction: column;
+    span:nth-of-type(2) {
+      font-weight: bold;
+    }
+  }
+}
+.airportinput__wrapper {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,23 @@
+@import '/src/styles/variables';
+.bookingmask__flight {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  .separator {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-large;
+    padding: 0 .5rem;
+  }
+  .inputs-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+  .input-wrapper {
+    position: relative;
+    label {
+      position: absolute;
+      left: 0;
+      bottom: calc(100% + .2rem);
+    }
+  }
+}

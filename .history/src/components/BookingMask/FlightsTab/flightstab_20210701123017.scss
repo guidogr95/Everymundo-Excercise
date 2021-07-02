@@ -1,0 +1,12 @@
+@import '/src/styles/variables';
+.bookingmask__flight {
+  &--geo {
+    display: flex;
+    .separator {
+      display: flex;
+      align-items: center;
+      font-size: $font-size-large;
+      padding: 0 2rem;
+    }
+  }
+}

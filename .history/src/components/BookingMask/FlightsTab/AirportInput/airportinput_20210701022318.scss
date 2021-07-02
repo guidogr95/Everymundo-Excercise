@@ -1,0 +1,9 @@
+.airportinput__dropdown {
+  .ant-select-item-option-content {
+    display: flex;
+    flex-direction: column;
+    span:nth-of-type(2) {
+      font-weight: bold;
+    }
+  }
+}

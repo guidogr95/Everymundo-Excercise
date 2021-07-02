@@ -1,0 +1,5 @@
+@import '/src/styles/variables';
+.bookingmask__flight {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}

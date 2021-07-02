@@ -1,0 +1,15 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+
+.bookingmask__flight--date {
+  @include breakpoint($bp-desktop-large) {
+    display: grid !important;
+    grid-template-columns: 45% 10% 45%;
+    .separator {
+      width: 100%;
+    }
+    .ant-picker {
+      width: 100%
+    }
+  }
+}

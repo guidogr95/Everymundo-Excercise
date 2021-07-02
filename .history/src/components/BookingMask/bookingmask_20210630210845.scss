@@ -1,0 +1,15 @@
+@import '/src/styles/variables';
+.bookingmask {
+  &__nav {
+    list-style: none;
+    button {
+      color: $color-white;
+      background: $color-gray;
+      padding: 1rem 2rem;
+      display: inline-flex;
+      align-items: center;
+      font-size: $font-size-medium;
+      font-weight: $font-weight-small;
+    }
+  }
+}

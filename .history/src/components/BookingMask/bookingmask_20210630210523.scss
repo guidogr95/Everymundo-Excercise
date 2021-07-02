@@ -1,0 +1,11 @@
+@import '/src/styles/variables';
+.bookingmask {
+  &__nav {
+    list-style: none;
+    button {
+      color: $color-white;
+      background: $color-gray;
+      padding: 1rem 2rem;;
+    }
+  }
+}

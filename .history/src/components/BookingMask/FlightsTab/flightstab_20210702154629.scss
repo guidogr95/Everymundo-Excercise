@@ -1,0 +1,48 @@
+@import '/src/styles/mixins';
+@import '/src/styles/variables';
+.bookingmask__flight {
+  display: flex;
+  flex-direction: column;
+  &--controls {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    @include breakpoint($bp-desktop-large) {
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: unset;
+      row-gap: 3rem;
+      justify-content: space-between;
+    }
+  }
+  &--footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .separator {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-large;
+    padding: 0 .5rem;
+    height: 100%;
+    width: 100;
+    justify-content: center;
+  }
+  .inputs-wrapper {
+    display: flex;
+    align-items: flex-end;
+    @include breakpoint($bp-desktop-large) {
+      width: 450%;
+      justify-content: space-between;
+    }
+  }
+  .input-wrapper {
+    position: relative;
+    label {
+      position: absolute;
+      left: 0;
+      bottom: calc(100% + .2rem);
+    }
+  }
+}

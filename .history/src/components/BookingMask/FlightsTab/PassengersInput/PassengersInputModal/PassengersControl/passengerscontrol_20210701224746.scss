@@ -1,0 +1,36 @@
+@import '/src/styles/variables';
+.ant-modal-body {
+  padding-top: 4rem;
+  .passengersmodal__input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:not(:first-of-type) {
+      margin-top: 2rem;
+    }
+    .input__text {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+    }
+    .input__text {
+      display: flex;
+      flex-direction: column;
+      font-weight: 400;
+      .input__legend {
+        font-weight: 200;
+        font-size: $font-size-small;
+      }
+    }
+    .passengersmodal__input--control {
+      height: 40px;
+      display: grid;
+      grid-template-columns: repeat(3, 35px);
+      border: .1rem solid $color-light-gray;
+      button {
+        background: none;
+        border: none;
+      }
+    }
+  }
+}

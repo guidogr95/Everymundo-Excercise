@@ -1,0 +1,54 @@
+@import 'variables';
+@import 'mixins';
+
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: $font-family;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  --antd-wave-shadow-color: #c00;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+.ant-select {
+  min-width: 200px;
+}
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.ant-picker-focused,
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before,
+.ant-picker:hover, .ant-picker-focused,
+.ant-input-affix-wrapper:not(.ant-input-affix-wrapper-disabled):hover {
+  border-color: $color-red !important;
+}
+.ant-picker-today-btn {
+  color: $color-red !important;
+}
+body::-moz-selection,
+body::selection {
+  color: $color-red !important;
+  background: $color-red !important;
+}
+.ant-btn-primary,
+.ant-checkbox-checked .ant-checkbox-inner {
+  background: $color-red !important;
+  border-color: $color-red !important;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

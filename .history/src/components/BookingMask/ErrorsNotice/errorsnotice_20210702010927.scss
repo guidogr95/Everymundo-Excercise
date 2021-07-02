@@ -1,0 +1,8 @@
+@import '/src/styles/variables';
+.bookingmask__errors {
+  background: $color-pink;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
